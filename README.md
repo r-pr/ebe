@@ -22,6 +22,7 @@ Visitor can:
 ## if time permits
 
 * custom themes
+* multilanguage support
 
 # Routes
 
@@ -32,7 +33,7 @@ Visitor can:
 * update: /?action=update&pid=X (GET, POST)
 * preview: /?action=(create|update&pid=X)&preview
 * view one post: /?action=view?pid=X
-* view all posts: 
+* view all posts: /?action=viewall&page=X[&tag=soft] 
 
 # Config
 

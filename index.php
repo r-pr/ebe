@@ -1,3 +1,4 @@
 <?php
 
-var_dump($_REQUEST);
+require_once('./app.php');
+App::start();
