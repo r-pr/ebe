@@ -1,7 +1,7 @@
 ebe: Elementary Blog Engine
 ===========================
 
-Technologies used: PHP+MySQL.
+Technologies used: PHP+Postgres.
 
 # Simple spec
 

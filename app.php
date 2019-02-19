@@ -10,18 +10,20 @@ class App {
         }
         $controllerPath = 'controllers/' . $_GET['action'] . '-controller.php';
         if (!file_exists($controllerPath)) {
-            return self::notFound();
+            return self::statusCat(404);
         }
         require_once($controllerPath);
     }
 
-    private static function notFound() {
+    public static function statusCat($httpCode) {
         echo "<body style=\"background-color: black; text-align: center\">
-            <img src=\"https://http.cat/404\"/>
+            <img src=\"https://http.cat/$httpCode\"/>
         </body>";
     }
 
-    public static function renderView(string $viewName, string $pageTitle) {
+    public static function renderView(string $viewName, string $pageTitle, 
+        $viewBag
+    ) {
         echo "<html>
             <head>
                 <title>" . Config::$siteTitle . " - " . $pageTitle . "
