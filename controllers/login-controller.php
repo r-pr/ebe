@@ -12,5 +12,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location:index.php?action=viewall');
     }
 } else {
-    App::renderView('login', 'Login', ['foo'=>'bar']);
+    App::renderView('login', 'Login', null);
 }

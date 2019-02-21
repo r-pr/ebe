@@ -10,7 +10,7 @@ No JS required.
 Owner can:
 
 * login
-* create, update, delete posts (posts are written in markdown format)
+* create, update, delete posts (posts are written in plain text)
 * attach tags to posts
 * delete visitors' comments
 
@@ -24,6 +24,16 @@ Visitor can:
 * custom themes
 * multilanguage support
 
+# Tables
+
+## posts
+
+id
+body
+time_created
+time_updated
+
+
 # Routes
 
 * login: /?action=login (GET, POST)
@@ -33,7 +43,7 @@ Visitor can:
 * update: /?action=update&pid=X (GET, POST)
 * preview: /?action=(create|update&pid=X)&preview
 * view one post: /?action=view?pid=X
-* view all posts: /?action=viewall&page=X[&tag=soft] 
+* view all posts: /?action=viewall[&tag=soft] 
 
 # Config
 
