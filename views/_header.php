@@ -8,9 +8,14 @@ if (isset($_SESSION['logged_in'])) {
 
 <div class="ebe-header">
     <h1>
-        <?=Config::$siteTitle?>
+        <a href="index.php">
+            <?=Config::$siteTitle?>
+        </a>
     </h1>
-    <p>
-        <a href="index.php?action=<?=$action?>"><?=$action?></a>
-    </p>
 </div>
+
+<div class="ebe-toolbar">
+    <a href="index.php?action=create">New post</a>
+    <a href="index.php?action=<?=$action?>"><?=$action?></a>
+</div>
+

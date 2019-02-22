@@ -11,4 +11,6 @@ class Config {
     public static $dbPassw = 'root';
     //
     public static $theme = 'default';
+    // symbols of post body in preview
+    public static $maxTextInPreview = 200;
 }

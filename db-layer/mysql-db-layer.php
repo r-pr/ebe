@@ -26,7 +26,7 @@ class DbLayer implements IDbLayer {
         return $res_arr;
     }
 
-    public function createPost(string $title, string $body) {
+    public function createPost($title, $body) {
         $time = date('Y-m-d H:i:s');
         $body = htmlspecialchars($body);
         $sql = "INSERT INTO posts (title, body, time_created, time_updated)

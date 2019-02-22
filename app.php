@@ -15,13 +15,13 @@ class App {
         require_once($controllerPath);
     }
 
-    public static function statusCat(int $httpCode) {
+    public static function statusCat($httpCode) {
         echo "<body style=\"background-color: black; text-align: center\">
             <img src=\"https://http.cat/$httpCode\"/>
         </body>";
     }
 
-    public static function renderView(string $viewName, string $pageTitle, 
+    public static function renderView($viewName, $pageTitle, 
         $viewBag
     ) {
         echo "<html>
@@ -32,7 +32,8 @@ class App {
             </head>
         <body>";
         require_once('views/_header.php');
+        echo " <div class='ebe-content'>";
         require_once('views/' . $viewName . '.php');
-        echo '</body></html>';
+        echo '</div></body></html>';
     }
 }
