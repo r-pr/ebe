@@ -36,6 +36,17 @@ body {
 	border: 1px dotted lightblue;
 }
 
+.ebe-post {
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+	border-bottom: 1px dotted lightblue;
+}
+
 .ebe-post > h2 {
 	margin-top: 0px;
+}
+
+.ebe-post-time {
+	font-style: italic;
+	font-size: .8em;
 }

@@ -12,5 +12,5 @@ class Config {
     //
     public static $theme = 'default';
     // symbols of post body in preview
-    public static $maxTextInPreview = 200;
+    public static $maxTextInPreview = 1000;
 }
