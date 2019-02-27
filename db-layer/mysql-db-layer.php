@@ -28,7 +28,9 @@ class DbLayer implements IDbLayer {
 
     public function createPost($title, $body) {
         $time = date('Y-m-d H:i:s');
+        $body = strip_tags($body);
         $body = mysqli_real_escape_string($this->db_conn, $body);
+        $title = strip_tags($body);
         $title = mysqli_real_escape_string($this->db_conn, $title);
         $sql = "INSERT INTO posts (title, body, time_created, time_updated)
             VALUES ('$title', '$body', '$time', '$time')";
@@ -37,11 +39,19 @@ class DbLayer implements IDbLayer {
 
     public function updatePost($id, $title, $body) {
         $time = date('Y-m-d H:i:s');
+        $body = strip_tags($body);
         $body = mysqli_real_escape_string($this->db_conn, $body);
+        $title = strip_tags($body);
         $title = mysqli_real_escape_string($this->db_conn, $title);
         $id = mysqli_real_escape_string($this->db_conn, $id);
         $sql = "UPDATE posts SET title = '$title', body = '$body', 
             time_updated = '$time' WHERE id = $id";
+        $this->execute_dml($sql);
+    }
+
+    public function deletePost($id) {
+        $id = mysqli_real_escape_string($this->db_conn, $id);
+        $sql = "DELETE FROM posts WHERE id = $id";
         $this->execute_dml($sql);
     }
 
