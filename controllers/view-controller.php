@@ -9,6 +9,7 @@ if (!isset($_GET['pid'])) {
     App::statusCat(400);
 } else {
     $post = $dbLayer->getPostById($_GET['pid']);
+    $post['body'] = str_replace("\n", '<br>', $post['body']);
     if (is_null($post)) {
         App::statusCat(404);
     } else {
