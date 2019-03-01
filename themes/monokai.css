@@ -1,0 +1,96 @@
+html {
+	padding: 0;
+    background-color: #373831;
+    font-family: Consolas,monospace;
+}
+
+a {
+    color: #66D9EF;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.ebe-header {
+	margin: 0;
+    padding: 1em;
+    padding-left: 1em;
+    background-color: #1B1B1B;
+}
+
+.ebe-header h1 {
+    display: inline-block;
+	margin: 0;
+    padding: 0;
+}
+
+.ebe-header h1 a {
+    text-decoration: none;
+    color: #F92672;
+}
+
+.ebe-toolbar {
+	background-color: #272822;
+	padding: .2em;
+    padding-left: 1em;
+    padding-bottom: .5em;
+}
+
+.ebe-toolbar a {
+    margin-right: 1em;
+    color: #A6E22E;
+}
+
+.ebe-content {
+	margin: .5em;
+	padding: .5em;
+
+    color: #8D8D8A;
+}
+
+.ebe-post {
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+    border-bottom: 2px dotted #444;
+    color: #E6DB74;
+}
+
+.ebe-post > h2 {
+    margin-top: 0px;
+    color: #66D9EF;
+    margin-bottom: 0;
+}
+
+.ebe-post-time {
+	font-style: italic;
+    font-size: .8em;
+    color: #8D8D8A;
+}
+
+input {
+    border-radius: 3px;
+    border-width: 0px;
+    border-color: black;
+    padding: .3em;
+    font-family: Consolas,monospace;
+    font-size: 1.02em;
+    background-color: #272822;
+    color: #8D8D8A;
+}
+
+input[type=password] {
+    text-align: center;
+}
+
+textarea {
+    border-radius: 3px;
+    border-width: 0px;
+    border-color: black;
+    padding: .3em;
+    font-family: Consolas,monospace;
+    font-size: 1.02em;
+    background-color: #272822;
+    color: #8D8D8A;
+}
